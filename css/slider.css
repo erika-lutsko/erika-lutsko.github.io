@@ -1,0 +1,121 @@
+/* Слайдер */
+.slick-slider {
+    min-width: 0;
+}
+
+/* Слайдер ініціалізований */
+.slick-slider.slick-initialized {}
+
+/* Слайдер з крапками */
+.slick-slider.slick-dotted {}
+
+/* Обмежуючий контейнер */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Послідовність слайдів */
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Слайд */
+.slick-slide {}
+
+/* Активний Слайд */
+.slick-slide.slick-active {}
+
+/* Слайд поточний */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонований слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрілки */
+.slick-arrow {
+    cursor: pointer;
+}
+
+/* Стрілка вліво */
+.slick-arrow.slick-prev {}
+
+/* Стрілка вправо */
+.slick-arrow.slick-next {}
+
+/* Стрілка не активна */
+.slick-arrow.slick-disabled {}
+
+/* Крапки */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активна крапка */
+.slick-dots li.slick-active {}
+
+/* Елемент крапки */
+.slick-dots li button {
+    cursor: pointer;
+}
+
+/* Стилізація конкретного слайдера */
+/* Наприклад слайдера з id="slider-01" */
+
+.slider {
+    position: relative;
+}
+
+.slider .slick-dots {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Відступ для крапок знизу */
+/*    margin-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.slider .slick-dots button {
+    border: none;
+    outline: none;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.red .slider .slick-dots li.slick-active button {
+    background-color: #E2033A;
+}
+
+.orange .slider .slick-dots li.slick-active button {
+    background-color: #E94F1B;
+}
+
+.green .slider .slick-dots li.slick-active button {
+    background-color: #75BA59;
+}
+
+.slider .item {
+    padding: 0px 0px;
+    /* Інтервал між слайдами */
+}
+
+.slider .item img {
+    max-width: 100%;
+}

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.4;
+    letter-spacing: .005em;
+}
+
+body p {
+    margin-bottom: .5em;
+}
+
+section {
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    letter-spacing: .1em;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 35px;
+    color: #432919;
+}

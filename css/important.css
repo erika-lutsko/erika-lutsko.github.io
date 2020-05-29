@@ -1,0 +1,82 @@
+#important {
+    background-color: #a7c98f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+#important .box {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.item {
+    font-size: 1.1rem;
+    color:#fff;
+    cursor: pointer;
+    min-width: 200px;
+    width: 240px;
+    height: 160px;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 25px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.item a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    /*font-family: Ubuntu;*/
+}
+
+.item:after {
+    cursor: pointer;
+    content:"";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 1em; 
+    margin-bottom: 1em; 
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+
+.item.green:after {
+    background-image: url("../img/impicto-06.svg");
+}
+
+.item.orange:after {
+    background-image: url("../img/impicto-03.svg");
+}
+
+.item.red:after {
+    background-image: url("../img/impicto-07.svg");
+}
+
+.item h3 {
+    font-size: 1.25em;
+    letter-spacing: .01em;
+}
+
+.item.green {
+    background-color: #75BA59;
+}
+
+.item.orange {
+    background-color: #E94F1B;   
+}
+
+.item.red {
+    background-color: #E2033A;
+}

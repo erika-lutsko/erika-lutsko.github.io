@@ -1,0 +1,81 @@
+#ivents {
+    background-color: #C2DDB0;
+    padding: 0 25px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+div img {
+    display: block;
+    max-width: 100%;
+}
+
+.img-box {
+    max-width: 85%;
+    padding: 50px 0 50px 200px;
+    position: relative;
+}
+
+.img-box img {
+    max-height: 75vh;
+    object-fit: cover;
+    object-position: center center;
+    position: relative;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.deco {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    display: flex;
+    align-items:flex-start;
+    z-index: 0;
+}
+
+.deco span {
+    width: 45%;
+    border-radius: 8px;
+    height: 150px;
+}
+
+.deco .solo.orange { background-color: #E94F1B; }
+
+.deco .dots.orange {
+    background-image: url("../img/dot-orange.png");
+    background-position: left bottom;
+    background-repeat: repeat;
+}
+
+.txt-box {
+    font-family: Ubuntu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 70px;
+    border-radius: 8px;
+    width: 43%;
+    min-height: 65%;
+    z-index: 2;
+}
+
+.picto {
+    width: 80px;
+    padding-bottom: 40px;
+}

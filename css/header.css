@@ -1,0 +1,35 @@
+header {
+    
+}
+
+.fullbackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/kids1.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.haslo {
+    padding-top: 17vh;
+}
+
+.fullbackground h1, .fullbackground p {
+    color: #fff;
+    text-align: center;
+}
+
+.fullbackground h1 {
+    font-size: 6vw;
+    letter-spacing: 0.025em;
+    line-height: 1.2;
+    text-transform: lowercase;
+}
+
+.fullbackground p {
+    font-size: 1.5rem;
+    letter-spacing: 0.025em;
+    line-height: 1.4;
+}

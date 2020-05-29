@@ -1,0 +1,26 @@
+#contacts {
+    background-color: #7a7;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.contact-icons a {
+    background-color: red;
+    border-radius: 8px;
+    display: inline-block;
+    width: 50px;
+}
+
+.contact-icons a.green { background-color: #28946a; }
+.contact-icons a.orange { background-color: #e73458; }
+.contact-icons a.red { background-color: #ed694b; }
+
+#contacts .contact-icons a:hover { background-color: #a7c98f; }
+
+.contact-icons a:nth-child(2) {
+    margin: 0 30px;
+}

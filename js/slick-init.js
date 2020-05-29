@@ -1,0 +1,30 @@
+$(document).ready(function(){
+	$('#sl-01').slick({
+        autoplay:false,
+        autoplaySpeed:3000,
+		arrows:false,
+		dots:true,
+        pauseOnDotsHover:true,
+		slidesToShow:1,
+		speed:350,
+	});
+    $('#sl-02').slick({
+        autoplay:false,
+        autoplaySpeed:3000,
+		arrows:false,
+		dots:true,
+        pauseOnDotsHover:true,
+		slidesToShow:1,
+		speed:350,
+	});
+    $('#sl-03').slick({
+        autoplay:false,
+        autoplaySpeed:3000,
+		arrows:false,
+		dots:true,
+        pauseOnDotsHover:true,
+		slidesToShow:1,
+		speed:350,
+	});
+});
+

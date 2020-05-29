@@ -1,0 +1,220 @@
+#about {
+    background-color: #C2DDB0;
+    padding: 0 25px;
+}
+
+#ivents {
+    background-color: #a7c98f;
+    padding: 0 25px;
+}
+
+#team {
+    background-color: #C2DDB0;
+    padding: 0 25px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+/*    justify-content: center;*/
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+/*    max-width: 140vh;*/
+    margin: auto;
+}
+
+.container.right {
+    justify-content: flex-start;
+/*    justify-content: center;*/
+}
+
+div img {
+    display: block;
+    max-width: 100%;
+}
+
+.img-box {
+    max-width: 80%;
+    max-width: 100vh;
+    width: 100%;
+    padding: 50px 0 50px 5vw;
+    position: relative;
+}
+
+.img-box .slider {
+    z-index: 1;
+}
+
+.right .img-box {
+    padding: 50px 5vw 50px 0;
+}
+
+.img-box img {
+    max-height: 75vh;
+    object-fit: cover;
+    object-position: center center;
+    position: relative;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.deco {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    z-index: 0;
+}
+
+.right .deco {
+    left: auto;
+    right: 0;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    z-index: 0;
+}
+
+.deco span {
+    width: 48%;
+    border-radius: 8px;
+    height: 150px;
+}
+
+.deco .solo.red {
+    background-color: #E2033A;
+}
+
+.deco .solo.orange {
+    background-color: #E94F1B;
+}
+
+.deco .solo.green {
+    background-color: #75BA59;
+}
+
+.deco .dots {
+    background-position: left bottom;
+    background-repeat: repeat;
+}
+
+.right .deco .dots {
+    background-position: right bottom;
+}
+
+.deco .dots.red {
+    background-image: url("../img/dot-red.png");
+}
+
+.deco .dots.orange {
+    background-image: url("../img/dot-orange.png");
+}
+
+.deco .dots.green {
+    background-image: url("../img/dot-green.png");
+}
+
+.txt-box {
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 40%;
+    min-height: 55%;
+    z-index: 2;
+}
+
+.right .txt-box {
+    left:auto;
+    right:0;
+}
+
+.txt-box > * {
+    width: 100%;
+    max-width: 340px;
+}
+
+.picto {
+    padding-bottom: 20px;
+}
+
+.picto img {
+    max-width: 60px;
+}
+
+.right .slider .slick-dots {
+    right: auto;
+    left:0;
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+@media screen and (min-aspect-ratio:16/10) {
+    
+    .container {
+        max-width: 135vh;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .txt-box {
+        min-height: 0;
+    }
+}
+
+@media screen and (orientation:portrait) and (max-width:767px) {
+    
+    section {
+        min-height:0;
+    }
+    
+    .container {
+        height:auto;
+        padding-bottom: 30px;
+    }
+    
+    .container .img-box {
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+    
+    .txt-box {
+        align-items: flex-end;
+        background-color: transparent;
+        position: static;
+        transform: none;
+        width: 100%;
+        padding-right:0;
+    }
+    
+    .txt-box > * {
+        max-width: none;
+    }
+    
+    .picto {
+        padding-bottom: 12px;
+    }
+    
+    .picto img {
+        max-width: 40px;
+    }
+    
+    .slider .slick-dots {
+        margin-right: 12px;
+    }
+}
